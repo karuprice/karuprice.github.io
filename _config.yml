@@ -7,13 +7,14 @@
 
 # Site settings
 title: Karl Price
-email: your-email@domain.com
+email: karuprice@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A blog/portfolio of Karl Price's study of and search for his first Web Development position, in or around Liverpool, UK.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Karl_Price
 github_username:  karuprice
+tagline: "Journey of becoming a Front-end developer, Liverpool UK."
 
-# Build settings
+# Build settings           kramdown is a markdown converter
 markdown: kramdown

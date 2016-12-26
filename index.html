@@ -1,23 +1,18 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<main role="main" class="cf">
+  <article class="posts">
+    <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+        <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </header>
+      <p>{{ post.excerpt | strip_html }} <a href="{{site.baseurl}}{{ post.url }}" title="read more" class="more">Read more</a></p>
+      <footer>
+        <p>Posted in <a href="category-url" >jekyll</a>, <a href="category-url" >javascript</a>, <a href="category-url" >html</a></p>
+      </footer>
+    </article>
+  </article>
+  {% include sidebar.html %}
+</main>

@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Karl_Price
 github_username:  karuprice
-tagline: "Journey of becoming a Front-end developer, Liverpool UK."
+tagline: "Journey of becoming a Front-End developer, Liverpool UK."
 
 # Build settings           kramdown is a markdown converter
 markdown: kramdown
